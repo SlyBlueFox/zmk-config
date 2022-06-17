@@ -87,7 +87,7 @@
 				&kp C_MUTE      &none           &none           &tog FUNC
 			 >;
 
-			 sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
+			 sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
 		 };
 	};
 };
