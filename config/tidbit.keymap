@@ -68,8 +68,18 @@
             wait-ms = <0>;
             tap-ms = <0>;
             bindings
-                = <&macro_tap &tog FUNC>
+                = <&macro_tap &to FUNC>
                 , <&macro_tap &rgb_ug RGB_COLOR_HSB(120,100,100)>;
+        };
+        to_rgb: to_rgb {
+            label = "ZM_to_rgb";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&macro_tap &to RGB>
+                , <&macro_tap &rgb_ug RGB_COLOR_HSB(0,100,100)>;
         };
     };
 	sensors {
@@ -98,7 +108,7 @@
 				&out OUT_TOG    &out OUT_USB    &out OUT_BLE    &none
 				&bt BT_SEL 0    &bt BT_PRV      &bt BT_NXT      &bt BT_CLR
 				&bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &tog 0
-				&tog FUNC       &tog RGB        &none           &tog FUNC
+				&tog FUNC       &to_rgb        &none           &tog FUNC
 			 >;
 
 			 sensor-bindings = <&inc_dec_kp DOWN UP>;
@@ -110,7 +120,7 @@
 				&rgb_ug RGB_BRI &rgb_ug RGB_SPI &rgb_ug RGB_SAI &rgb_ug RGB_HUI
 				&rgb_ug RGB_BRD &rgb_ug RGB_SPD &rgb_ug RGB_SAD &rgb_ug RGB_HUD
 				&rgb_ug RGB_EFR &rgb_ug RGB_EFF &none           &none 
-				&none           &tog RGB        &none           &none 
+				&none           &to_func        &none           &none 
 			 >;
 
 			 sensor-bindings = <&inc_dec_kp DOWN UP>;
