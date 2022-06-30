@@ -64,6 +64,7 @@
         to_func: to_func {
             label = "ZM_to_func";
             compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
             bindings
