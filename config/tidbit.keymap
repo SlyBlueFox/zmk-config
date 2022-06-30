@@ -69,7 +69,8 @@
             tap-ms = <0>;
             bindings
                 = <&macro_tap &to FUNC>
-                , <&macro_tap &rgb_ug RGB_COLOR_HSB(120,100,100)>;
+                //, <&macro_tap &rgb_ug RGB_COLOR_HSB(120,100,100)>
+                ;
         };
         to_rgb: to_rgb {
             label = "ZM_to_rgb";
@@ -79,7 +80,8 @@
             tap-ms = <0>;
             bindings
                 = <&macro_tap &to RGB>
-                , <&macro_tap &rgb_ug RGB_COLOR_HSB(0,100,100)>;
+                //, <&macro_tap &rgb_ug RGB_COLOR_HSB(0,100,100)>
+                ;
         };
         to_default: to_default {
             label = "ZM_to_default";
@@ -89,7 +91,8 @@
             tap-ms = <0>;
             bindings
                 = <&macro_tap &to DEFAULT>
-                , <&macro_tap &rgb_ug RGB_COLOR_HSB(240,100,100)>;
+                //, <&macro_tap &rgb_ug RGB_COLOR_HSB(240,100,100)>
+                ;
         };
     };
 	sensors {
