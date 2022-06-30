@@ -159,7 +159,7 @@
 				&to_func        &to_func        &none           &none 
 			 >;
 
-			 sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
+			 sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
 		 };
 	};
 };
